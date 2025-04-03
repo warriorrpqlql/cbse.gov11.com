@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CBSE Result</title>
+    <script>
+        function checkResult() {
+            var inputNumber = document.getElementById("gygrNumber").value;
+            var correctNumber = "17141135"; // Your actual GY GR number
+
+            if (inputNumber === correctNumber) {
+                document.getElementById("resultImage").style.display = "block";
+            } else {
+                alert("Invalid GY GR Number. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter Your GY GR Number</h2>
+    <input type="text" id="gygrNumber" placeholder="Enter Number">
+    <button onclick="checkResult()">Submit</button>
+    <br><br>
+    <img id="resultImage" src="result.jpg" style="display:none; width:100%;" alt="Result Image">
+</body>
+</html>
